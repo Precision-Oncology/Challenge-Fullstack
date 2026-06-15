@@ -1,89 +1,80 @@
-# Full-Stack Engineer Take-Home: Clinical Trial Matching System
+# Product Engineer Take-Home: Clinical Trial Matching System
 
 ## Challenge Overview
-Build a clinical trial matcher. We want to see:
-1. **BioMCP integration** to fetch real trials
-2. **LLM-powered ranking** (be clever here!)
-3. **Evaluation suite** you're proud of (get creative: synthetic data, LLM-as-judge, whatever works)
+Build a clinical trial matcher for patients. We want to see:
+1. A real patient-facing interface (basic is fine, but no CLI!)
+2. Agent-powered matching (be clever here!)
+3. A product we'd ship today because patients would love it
 
 **Time:** ~3 hours. Ship fast, be scrappy, show your thinking.
 
 ## What You Need to Build, in no particular order
 
-### 1. **Trial Fetcher**
-- Use BioMCP to get real clinical trials.
-- Fetch cleverly.
+### 1. **Patient Interface**
+- A interface a patient could actually use. Basic is fine.
 
-### 2. **LLM Ranker** 
-- Use any LLM(s) to rank trials.
-- Rank cleverly.
+### 2. **Agent Matcher** 
+- Use agents to parse the eligibility text and match or rank trials. Any models, any architecture.
 
-### 3. **Evaluation Suite** ⭐ THIS IS KEY
-We want to see how you think about evaluation.
-- Can be hard-coded, synthetic data, real-life data, LLM-as-judge, reward models, RLHF/RLAIF, etc. Get creative and work fast.
-- Your main prerogative: Stand up an eval suite you're proud of!
+### 3. **The Patient Experience** ⭐ THIS IS KEY
+We want to see how you think about the patient.
+- They should get to the right trials, understand why they fit, and know what to do next.
+- The hard moments matter: no good match, vague inputs, scary topics. Handle them deliberately.
+- On the walkthrough call we will use your product together, as a patient would. Build for that.
 
 **Just make it run:**
-```bash
-python src/match.py --patient_id P002
-# Output: Ranked NCT IDs with scores
-
-python tests/test_matching.py  
-# Output: Your eval metrics, whatever you choose
-```
 
 ## Example codebase structure
 
 ```
 name-your-solution/
-├── patients.csv          # We provide this
-├── src/
-│   └── match.py         # Your matcher (can split into modules if you want)
-└── tests/
-    └── eval.py  # Your eval suite (can split into modules if you want)
+├── trials.csv           # We provide this
+├── patients.json         # We provide this
+├── app/                  # Your product (structure however you want)
+└── README.md
 ```
 
 Structure however you'd like, free to add more files.
 
 ## Technical Details
 
-### BioMCP SDK Usage
-The BioMCP SDK provides **live clinical trial data**.
-Think about what you'd use to filter.
-
-**Got a specialty?** Show it off! Whether it's RL, RAG, fine-tuning, UI/UX, or advanced prompting - add your flair.
+### The Data
+- We provide trials.csv: 65 real clinical trials with eligibility criteria as raw free text. The .csv is messy on purpose. I’d think about how you'd clean and parse it. The toughest bit is dealing with the inclusion/exclusion criteria.
+- patients.json has a few personas for testing. No external APIs needed.
+- Build with AI using Claude Code, Codex, worktrees, fanned out subagents or whatever you ship with. We expect it and hire for it!
+- Got a specialty? Show it off! Whether it's UI/UX, product analytics, advanced prompting, post-training, or something else.
+- A chat wrapper with stock prompting won't clear the bar. Show us what we can't make ourselves in 30 minutes.
 
 ## What Makes a Great Submission
 
 **We care about:**
-- It works (can run your commands and get results)
-- Understanding of strengths and limits of LLMs
-- Thoughtful evaluation (show you understand the problem)
+- It works
+- Thoughtful build (show you understand the problem and users)
+- Would a patient love this and engage with it
+- How much real, working product you shipped in the window
 - Rate of learning, Rate of execution
 
 **We don't care about:**
 - Perfect code architecture
-- 100% test coverage
-- Supporting every edge case
-
+- Test coverage and supporting every edge case
+  
 ## Quick Start
 
 ```bash
 # Install basics
-pip install biomcp pandas openai  # or whatever you need
+npm or pip, whatever you need
 
 # Start here:
-1. Get BioMCP working - fetch some trials
-2. Hook up an LLM - rank them somehow  
-3. Build an eval - prove it works, and iterate
+1. Load trials.csv and get matching/ranking working
+2. Put a patient persona in front of it, build the product, and iterate
 
-# Tip: If you'd like, focus on one cancer to start. Breast cancer works well.
+# Tip:Start with one patient persona. Make their experience great first. If you'd like, focus on one cancer to start. Breast cancer works well.
 ```
 
 ## Submission Instructions
 
 1. **Complete your solution** in a private GitHub repo
-2. **Add bryan as a collaborator**
+2. **Add bryan (@bryantanwz) as a collaborator**
 3. **Include a brief README** explaining:
    - How to run your solution
    - Your approach and key decisions
@@ -99,6 +90,6 @@ This is deliberately open-ended. We want to see:
 - How you balance speed vs quality
 - What you consider "good enough" for a 3-hour sprint
 
-Remember: **We're a startup.** Show us you can ship fast, think clearly, and build things that work.
+Remember: **We're a startup.** Show us you can ship fast, think clearly, and build things that patients love.
 
 Good luck! 
