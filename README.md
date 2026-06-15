@@ -69,7 +69,7 @@ npm or pip, whatever you need
 1. Load trials.csv and get matching/ranking working
 2. Put a patient persona in front of it, build the product, and iterate
 
-# Tip:Start with one patient persona. Make their experience great first. If you'd like, focus on one cancer to start. Breast cancer works well.
+# Tip: Start with one patient persona. Make their experience great first. If you'd like, focus on one cancer to start, lung 
 ```
 
 ## Submission Instructions
