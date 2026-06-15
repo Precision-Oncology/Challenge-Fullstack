@@ -20,6 +20,7 @@ Build a clinical trial matcher for patients. We want to see:
 We want to see how you think about the patient.
 - They should get to the right trials, understand why they fit, and know what to do next.
 - The hard moments matter: no good match, vague inputs, scary topics. Handle them deliberately.
+- How do you handle telling a patient there is currently no match?
 - On the walkthrough call we will use your product together, as a patient would. Build for that.
 
 **Just make it run:**
@@ -40,7 +41,7 @@ Structure however you'd like, free to add more files.
 
 ### The Data
 - We provide trials.csv: 65 real clinical trials with eligibility criteria as raw free text. The .csv is messy on purpose. I’d think about how you'd clean and parse it. The toughest bit is dealing with the inclusion/exclusion criteria.
-- patients.json has a few personas for testing. No external APIs needed.
+- patients.json has included a few personas for testing but feel free to create more synthetic patients if you'd like. 
 - Build with AI using Claude Code, Codex, worktrees, fanned out subagents or whatever you ship with. We expect it and hire for it!
 - Got a specialty? Show it off! Whether it's UI/UX, product analytics, advanced prompting, post-training, or something else.
 - A chat wrapper with stock prompting won't clear the bar. Show us what we can't make ourselves in 30 minutes.
