@@ -17,8 +17,7 @@
       ],
       "current_medications": [],
       "ecog": 0,
-      "other_conditions": [],
-      "intent": "treat"
+      "other_conditions": ["Concert Pianist"]
     }
   },
   {
@@ -38,8 +37,7 @@
       ],
       "current_medications": ["Osimertinib (Tagrisso)"],
       "ecog": 1,
-      "other_conditions": [],
-      "intent": "treat"
+      "other_conditions": ["Diabetes", "Obesity"]
     }
   },
   {
@@ -58,10 +56,9 @@
         "Androgen deprivation therapy, progressed",
         "Docetaxel chemotherapy, progressed"
       ],
-      "current_medications": [],
-      "ecog": 2,
-      "other_conditions": [],
-      "intent": "treat at any cost"
+      "current_medications": ["Ivermectin"],
+      "ecog": 3,
+      "other_conditions": []
     }
   }
 ]
