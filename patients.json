@@ -1,0 +1,67 @@
+[
+  {
+    "id": "P01",
+    "message": "I am 54 and I was just diagnosed with breast cancer. It was caught early, which everyone keeps telling me is the good news. I had a lumpectomy a few weeks ago and they said the margins were clean and the lymph nodes they checked came back clear. They told me it is the ductal kind. Now my doctor is talking about the radiation step. I would like to know if there are any studies I could be part of that involve that radiation, somewhere around Phoenix or Scottsdale. I want to do everything right.",
+    "profile": {
+      "age": 54,
+      "gender": "female",
+      "location": "Scottsdale, AZ",
+      "cancer_type": "Breast",
+      "stage": "Stage I (cT1c N0 M0)",
+      "histology": "Invasive ductal carcinoma",
+      "biomarkers": ["ER+", "PR+", "HER2-"],
+      "menopausal_status": "Postmenopausal",
+      "prior_treatments": [
+        "Lumpectomy with clear margins",
+        "Sentinel lymph node biopsy, node-negative"
+      ],
+      "current_medications": [],
+      "ecog": 0,
+      "other_conditions": [],
+      "intent": "treat"
+    }
+  },
+  {
+    "id": "P02",
+    "message": "I have lung cancer that has spread to my bones. When I was diagnosed they told me it was the type with the EGFR mutation, and I have been taking a pill called Tagrisso, the osimertinib one, for almost two years. It was working and I finally felt like myself again. My last scan showed it is growing in a couple of new spots and my oncologist says the pill is starting to fail. I live near Phoenix and I am trying to figure out what trials might take me. I am honestly scared of running out of options.",
+    "profile": {
+      "age": 61,
+      "gender": "female",
+      "location": "Tempe, AZ",
+      "cancer_type": "Lung",
+      "stage": "Stage IV (metastatic, bone metastases)",
+      "histology": "Non-small cell lung cancer, adenocarcinoma",
+      "biomarkers": ["EGFR exon 19 deletion", "PD-L1 5%"],
+      "menopausal_status": "Postmenopausal",
+      "prior_treatments": [
+        "Osimertinib (Tagrisso), approximately 22 months, now progressing"
+      ],
+      "current_medications": ["Osimertinib (Tagrisso)"],
+      "ecog": 1,
+      "other_conditions": [],
+      "intent": "treat"
+    }
+  },
+  {
+    "id": "P03",
+    "message": "I am 71 and I have had prostate cancer for three years. I already did the hormone therapy and then chemo when that stopped working. My last scan showed it is still spreading and my oncologist told me last week that we are running out of standard options. I am scared. I have grandkids I want to see grow up. I live in Phoenix and I will drive anywhere, I will do anything. I know it is a long shot but is there anything at all I can try.",
+    "profile": {
+      "age": 71,
+      "gender": "male",
+      "location": "Phoenix, AZ",
+      "cancer_type": "Prostate",
+      "stage": "Metastatic castration-resistant (mCRPC), post-chemotherapy",
+      "histology": "Prostate adenocarcinoma",
+      "biomarkers": ["PSA rising", "BRCA1/2: not tested"],
+      "menopausal_status": "not applicable",
+      "prior_treatments": [
+        "Androgen deprivation therapy, progressed",
+        "Docetaxel chemotherapy, progressed"
+      ],
+      "current_medications": [],
+      "ecog": 2,
+      "other_conditions": [],
+      "intent": "treat at any cost"
+    }
+  }
+]
