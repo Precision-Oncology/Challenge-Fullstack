@@ -43,7 +43,7 @@ Structure however you'd like, free to add more files.
 - We provide trials.csv: 65 real clinical trials with eligibility criteria as raw free text. The .csv is messy on purpose. I’d think about how you'd clean and parse it. The toughest bit is dealing with the inclusion/exclusion criteria.
 - patients.json has included a few personas for testing but feel free to create more synthetic patients if you'd like. 
 - Build with AI using Claude Code, Codex, worktrees, fanned out subagents or whatever you ship with. We expect it and hire for it!
-- Got a specialty? Show it off! Whether it's UI/UX, product analytics, advanced prompting, post-training, or something else.
+- Got a specialty? Show it off! Whether it's UI/UX, product analytics, growth engineering, self-improving loops, advanced prompting, post-training, or something else.
 - A chat wrapper with stock prompting won't clear the bar. Show us what we can't make ourselves in 30 minutes.
 
 ## What Makes a Great Submission
